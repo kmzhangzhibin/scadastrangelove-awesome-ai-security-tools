@@ -2863,6 +2863,36 @@
                 "updated": "2026-10-19",
                 "snapshot": "2026-10-21"
               }
+            },
+            {
+              "name": "Tracekit",
+              "repo": "Cygnux-Labs/Tracekit",
+              "org": "Cygnux Labs",
+              "desc": "Out-of-process signer that agent SDK adapters, coding-agent hooks and an MCP gateway consult before every tool call; it enforces allow, deny or human-approval decisions bound to the exact arguments, and keeps a per-run Ed25519-signed, hash-chained log with signed gap records that exports as a bundle verifiable offline in Python or TypeScript.",
+              "license": "MIT",
+              "status": [
+                "open_source"
+              ],
+              "flags": [
+                "early_stage",
+                "commercial_features"
+              ],
+              "note": "— **note:** young project (first PyPI release 2026-10-09) with limited independent adoption signal. By default (dev mode) signer and agent share one OS account, so an agent that reads the signing key could re-sign the log; it becomes tamper-resistant only with the signer under its own system user, in a sidecar container or on a central host, and catching a cut-off or re-signed log needs an independent witness. Only calls routed through an adapter, hook or gateway are gated and recorded, and policy rules match command text and tool names. A hosted team product (Tracekit Enterprise) is in early access; the MIT signer holds nothing back for it.",
+              "related": [
+                {
+                  "label": "node9",
+                  "url": "https://github.com/node9-ai/node9-proxy"
+                },
+                {
+                  "label": "Agentmetry",
+                  "url": "https://github.com/blitzcrieg1/agentmetry"
+                }
+              ],
+              "metrics": {
+                "stars": 149,
+                "updated": "2026-10-22",
+                "snapshot": "2026-10-22"
+              }
             }
           ]
         }
