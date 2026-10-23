@@ -3467,6 +3467,26 @@
             "updated": "2026-10-07",
             "snapshot": "2026-10-13"
           }
+        },
+        {
+          "name": "DeepSeek Exposure Scan",
+          "repo": "dylanXM/deepseek-scanner",
+          "org": "dylanXM",
+          "desc": "Zero-dependency CLI that scans a codebase for DeepSeek components (API endpoints, SDK imports, dependency entries, container pulls, model artifacts) and generates a file:line evidence report for supplier disclosure.",
+          "status": ["open_source"],
+          "flags": ["early_stage"],
+          "license": "Apache-2.0",
+          "metrics": { "stars": 0, "updated": "2026-10-22", "snapshot": "2026-10-23" }
+        },
+        {
+          "name": "litellm-check",
+          "repo": "dylanXM/litellm-check",
+          "org": "dylanXM",
+          "desc": "Read-only CLI that scans manifests, lockfiles, container definitions, and installed Python environments for exposure to the compromised LiteLLM v1.107.0 release, using only checks from LiteLLM's official incident announcement, and writes an evidence report.",
+          "status": ["open_source"],
+          "flags": ["early_stage"],
+          "license": "Apache-2.0",
+          "metrics": { "stars": 0, "updated": "2026-10-22", "snapshot": "2026-10-23" }
         }
       ]
     },
