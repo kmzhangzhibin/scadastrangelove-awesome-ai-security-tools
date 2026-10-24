@@ -866,6 +866,22 @@
                 "updated": "2026-09-08",
                 "snapshot": "2026-10-13"
               }
+            },
+            {
+              "name": "2MNY Website Vulnerability Scanner",
+              "repo": "RanaKhan77/Website-Vulnerability-Scanner",
+              "org": "RanaKhan77",
+              "desc": "Self-hosted website security scanner whose 202-module deterministic suite includes dedicated AI-surface auditing: MCP server security (tool poisoning, resource and prompt abuse), LLM Top-10 exposure, A2A agent endpoints, vector-DB and MLOps panels, and leaked AI key detection, with CVSS-scored evidence and zero AI at scan time.",
+              "license": "Apache-2.0",
+              "status": [
+                "open_source"
+              ],
+              "note": "— **note:** remote website/MCP-surface auditor, not a local agent-config inventory; AI-surface checks are unauthenticated probes of exposed endpoints, intrusive tests are ownership-gated, and verdicts are fully deterministic (no model in the loop).",
+              "metrics": {
+                "stars": 3,
+                "updated": "2026-10-24",
+                "snapshot": "2026-10-24"
+              }
             }
           ]
         },
