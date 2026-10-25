@@ -9,7 +9,7 @@
 
 **Type legend:** 🟢 public source / open-source · 🔬 research (paper / benchmark / dataset / framework) · 🟠 commercial with open components · ⚠️ restrictive, non-commercial, or unclear/no license — check before use.
 
-GitHub-hosted entries show static **★ stars** and **last-commit** snapshots; refresh them with `python3 scripts/update_github_metrics.py` before release. Most recently refreshed entry: 2026-10-21. Hugging Face model entries show license, access, and artifact metadata. Ordering within a section favors flagship and actively maintained projects.
+GitHub-hosted entries show static **★ stars** and **last-commit** snapshots; refresh them with `python3 scripts/update_github_metrics.py` before release. Most recently refreshed entry: 2026-10-25. Hugging Face model entries show license, access, and artifact metadata. Ordering within a section favors flagship and actively maintained projects.
 
 ---
 
@@ -536,6 +536,8 @@ AI/LLM tooling for CTI gathering, IOC/TTP extraction, and analysis.
   - **Related:** [threat-intelligence-cti-analysis](https://github.com/AnandBinuArjun/threat-intelligence-cti-analysis) · [CTIBench](https://github.com/maveryn/cti-bench)
 - **[CTIBench](https://github.com/maveryn/cti-bench)** 🔬⚠️ — NeurIPS 2024 Spotlight benchmark with 4,610 examples across CTI knowledge, CWE root-cause mapping, CVSS prediction, ATT&CK technique extraction, and threat-actor attribution. — **note:** non-commercial research benchmark; the repository publishes data, evaluation notebooks, model outputs, and raw logs rather than a production CTI service. *(★ 94 · updated 2026-05-07)*
   - **Related:** [CTINexus](https://github.com/peng-gao-lab/ctinexus) · [CTI-BERT](https://huggingface.co/ibm-research/CTI-BERT)
+- **[Vulnerability Exposure Analyzer](https://github.com/MRFrazer25/Vulnerability-Exposure-Analyzer)** 🟢 — Streamlit agent that checks IPs, domains, CVEs and software versions for confirmed vulnerabilities and exposure (NVD version ranges, CISA KEV, EPSS, OSV distro backports, Shodan) and writes a cited assessment that code checks against the source data. **Caveat:** a Cohere model (Command A+ by default) plans the lookups and writes the report, so the target and the tool results go to Cohere under the user's own API key. A deterministic checker flags report claims the data doesn't support, but findings still need analyst verification. Data-source keys are optional; a sibling MCP server runs the same lookups with the user's own client model instead. *(★ 3 · updated 2026-10-25)*
+  - **Related:** [Vulnerability-Exposure-MCP](https://github.com/MRFrazer25/Vulnerability-Exposure-MCP)
 - **[CTI-BERT](https://huggingface.co/ibm-research/CTI-BERT)** 🟢🔬 — BERT model pretrained from scratch on a large cybersecurity text corpus for downstream CTI extraction, classification, and question-answering tasks. *(IBM Research)* *license: Apache-2.0 · access: open · artifacts: PyTorch.*
 
 ---

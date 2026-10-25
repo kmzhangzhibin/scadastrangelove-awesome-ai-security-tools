@@ -5633,6 +5633,31 @@
           }
         },
         {
+          "name": "Vulnerability Exposure Analyzer",
+          "repo": "MRFrazer25/Vulnerability-Exposure-Analyzer",
+          "desc": "Streamlit agent that checks IPs, domains, CVEs and software versions for confirmed vulnerabilities and exposure (NVD version ranges, CISA KEV, EPSS, OSV distro backports, Shodan) and writes a cited assessment that code checks against the source data.",
+          "status": [
+            "open_source"
+          ],
+          "license": "MIT",
+          "flags": [
+            "model_dependent",
+            "requires_api_key"
+          ],
+          "note": "**Caveat:** a Cohere model (Command A+ by default) plans the lookups and writes the report, so the target and the tool results go to Cohere under the user's own API key. A deterministic checker flags report claims the data doesn't support, but findings still need analyst verification. Data-source keys are optional; a sibling MCP server runs the same lookups with the user's own client model instead.",
+          "related": [
+            {
+              "label": "Vulnerability-Exposure-MCP",
+              "url": "https://github.com/MRFrazer25/Vulnerability-Exposure-MCP"
+            }
+          ],
+          "metrics": {
+            "stars": 3,
+            "updated": "2026-10-25",
+            "snapshot": "2026-10-25"
+          }
+        },
+        {
           "kind": "hf_model",
           "name": "CTI-BERT",
           "model": "ibm-research/CTI-BERT",
